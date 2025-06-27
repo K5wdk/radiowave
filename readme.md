@@ -1,13 +1,13 @@
 # Radio-Streaming Webseite  
 **Informatik-Projekt von Samuel & Jonah (2025)**  
 
-→ [Live-Webseite ansehen](#)  
+→ [Live-Webseite ansehen](https://radiowave-v1.netlify.app/)  
 → [GitHub-Repository](https://github.com/k5wdk)  
 
 ---
 
 ## Genutze Technologien  
-- HTML, CSS, JavaScript (Tailwind, astro)
+- HTML, CSS, JavaScript (Tailwind)
 - StreamURL von [streamurl.link](https://streamurl.link)
 - 
 ---
