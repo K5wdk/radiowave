@@ -6,7 +6,7 @@
 //      https://github.com/k5wdk/RadioWave
 
 const radios = {
-    Placeholder: [
+    WDR: [
       { name: "1Live", image: "https://www.radio.de/300/1live.png?version=833858d2831baf1f43a9c5349a22b5a82", streamUrl: "https://wdr-1live-live.icecastssl.wdr.de/wdr/1live/live/mp3/128/stream.mp3" },
       { name: "WDR 2", image: "https://www1.wdr.de/radio/wdr2/wdrzwei236~_v-Podcast.jpg", streamUrl: "https://wdr-wdr2-aachenundregion.icecastssl.wdr.de/wdr/wdr2/aachenundregion/mp3/128/stream.mp3" },
       { name: "WDR 3", image: "https://www.radio.de/300/wdr3.png?version=2f8075055d0fa8b46ec39aa71a59cd56", streamUrl: "https://wdr-wdr3-live.icecastssl.wdr.de/wdr/wdr3/live/mp3/128/stream.mp3" },
@@ -14,29 +14,29 @@ const radios = {
       { name: "WDR 5", image: "https://www.radio.de/300/wdr5.png?version=e444162b209e5b492ecccd86b6b76db5", streamUrl: "https://wdr-wdr5-live.icecastssl.wdr.de/wdr/wdr5/live/mp3/128/stream.mp3" },
       { name: "WDR Cosmo", image: "https://api.my-radios.com/images/thumb.php?countryCode=DE&name=29046-852154.png&size=200", streamUrl: "https://wdr-cosmo-live.icecastssl.wdr.de/wdr/cosmo/live/mp3/128/stream.mp3" }
     ],
-    Placeholder2: [
+    Rundfunk: [
       { name: "RauteMusik", image: "https://play-lh.googleusercontent.com/plpEeCu8sIJf6WYRiVRY8VSDTXAxTyNGg_G-IrRv93x3ktiXtcEhkT7pV512IVwpOQbU", streamUrl: "https://deutschrap-high.rautemusik.fm/" },
       { name: "ffn (Radio Bollerwagen)", image: "https://media.tenor.com/Po82UwnCgmgAAAAe/ffn-radio-ffn.png", streamUrl: "http://stream.ffn.de/radiobollerwagen/mp3-192/stream.mp3" },
       { name: "Blasmusik Radio", image: "https://static.vecteezy.com/system/resources/thumbnails/004/141/669/small_2x/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg", streamUrl: "" },
       { name: "Radio Paloma", image: "https://play-lh.googleusercontent.com/QvGMNv5teMiAnjc6OAZCA4ODd9H5JESRHqGrhsk_Vx3Y2lJWEarPJGw0KsgdoUjfR0dG", streamUrl: "https://geostream.silvacast.com/RPLive/mp3-128/com/" },
       { name: "Radio Energy", image: "https://www.radio.de/300/energyhits.png?version=1ea209d590055bf6de256ac6aa30a339", streamUrl: "https://edge09.streamonkey.net/energy-madeingermany" },
-      { name: "BigFM", image: "https://store-images.s-microsoft.com/image/apps.28733.13576399939226586.d2e6c0d6-3768-453f-8e1c-1af60571f080.f3aa0086-e046-4faf-88e7-246c3c1b9b68?h=210", streamUrl: "https://stream.bigfm.de/deutschland/mp3-128/" }
+      { name: "BigFM", image: "https://www.radio.de/300/bigfm.png?version=2fa01c49acfb4bca18f35f24a9eb1dc3", streamUrl: "https://stream.bigfm.de/deutschland/mp3-128/" }
     ],
     Placeholder3: [
       { name: "SWR 3", image: "https://radiowerbung.shop/wp-content/uploads/swr3.jpg", streamUrl: "http://liveradio.swr.de/tn8jep3/swr3/" },
-      { name: "Radio Bob", image: "https://germany.mom-gmr.org/uploads/tx_lfrogmom/media/4030-2555_import.png", streamUrl: "http://streams.radiobob.de/live-nrw-mitte/mp3-192/" },
-      { name: "Antenne AC", image: "https://www.radiosplay.com/files/5/1/0/6/5106-5041.jpg", streamUrl: "https://stream.antenneac.de/444z58q" },
+      { name: "Radio Bob", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr3fx1pk4ksQfbzDmcSnhR-zrw5WrZamUKlg&s", streamUrl: "http://streams.radiobob.de/live-nrw-mitte/mp3-192/" },
+      { name: "Antenne AC", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzq0-x_O-NgMakSVpqWFQJg6UiRMhsPcF0zg&s", streamUrl: "https://stream.antenneac.de/444z58q" },
       { name: "100.5", image: "https://www.radio.de/300/alemannia.png?version=2ea6d7e54e561fa1d42df0a19813755f", streamUrl: "https://stream.dashitradio.de/dashitradio/mp3-128/stream.mp3" },
       { name: "RTL Radio", image: "https://play-lh.googleusercontent.com/XeEnMEvTk5HtulVECgkaiXDSbhc4ilCmZxSp-eTUVrZV8jJ9OHsRInMF_wlNk2S5LA", streamUrl: "http://stream.89.0rtl.de/live/mp3-256/" },
       { name: "RPR1", image: "https://play-lh.googleusercontent.com/TPDYyi5K8GRUhpAe5rwHnWSDsfIhm06U2dJIotKFjRCoA6ApAomoURmiwqbX2x5Kwfa_", streamUrl: "https://stream.rpr1.de/webradio/mp3-128/" }
     ],
   International: [
     { name: "QMusic - BE", image: "https://play-lh.googleusercontent.com/CYeSivy9LENsspqOIl01jzTJxml_XcONH99cTj4piUn-Ku7XhW0M_887Im20NMS9s9I", streamUrl: "https://icecast-qmusicnl-cdp.triple-it.nl/Qmusic_nl_live.mp3" },
-    { name: "Kiss Kiss - IT", image: "https://www.radio.de/300/kisskissitalia.png?version=f7b0ab7d8ac1073474a17ae6818cc483", streamUrl: "https://kisskiss.fluidstream.eu/KKNapoli.mp3" },
+    { name: "Kiss Kiss - IT", image: "https://myradioonline.it/public/uploads/radio_img/radio-kiss-kiss/play_250_250.webp", streamUrl: "https://kisskiss.fluidstream.eu/KKNapoli.mp3" },
     { name: "Los 40 - ES", image: "https://www.radio.de/300/los40.png?version=db64e7dd28221ca22d05372cdf75730d", streamUrl: "https://playerservices.streamtheworld.com/api/livestream-redirect/LOS40.mp3" },
     { name: "KissFM - UKR", image: "https://www.radio.de/300/kissfmes.jpeg?version=630265c067540f2625fbbe2f7bfb1f38", streamUrl: "https://online.kissfm.ua/KissFM_Ukr" },
-    { name: "-", image: "https://play-lh.googleusercontent.com/XeEnMEvTk5HtulVECgkaiXDSbhc4ilCmZxSp-eTUVrZV8jJ9OHsRInMF_wlNk2S5LA", streamUrl: "" },
-    { name: "-", image: "https://www.radio.de/300/kissfmes.jpeg?version=630265c067540f2625fbbe2f7bfb1f38", streamUrl: "http://online.kissfm.ua/KissFM_Digital" }
+    { name: "MNM", image: "https://uk.radio.net/300/mnm.png?version=1ac11139a0f3e6268fa4b0a5ea27696c", streamUrl: "" },
+    { name: "House Music Radio", image: "https://www.radio.de/300/housemusicradio.png?version=5a8e2e0b672f369c96ed7ed84eecf632", streamUrl: "http://online.kissfm.ua/KissFM_Digital" }
   ]
   };
 
