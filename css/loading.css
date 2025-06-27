@@ -1,0 +1,22 @@
+.loader-dot {
+  --d: 10px;
+  display: inline-block;
+  margin-inline: max(2px, calc(var(--d) / 5));
+  width: var(--d);
+  height: var(--d);
+  background: white;
+  border-radius: calc(var(--d) / 2);
+  animation: scale-up-down 1500ms linear alternate infinite;
+}
+.loader-dot:nth-child(1) { animation-delay: -1500ms; }
+.loader-dot:nth-child(2) { animation-delay: -1200ms; }
+.loader-dot:nth-child(3) { animation-delay: -900ms; }
+.loader-dot:nth-child(4) { animation-delay: -600ms; }
+.loader-dot:nth-child(5) { animation-delay: -300ms; }
+@keyframes scale-up-down {
+  to {
+    height: calc(var(--d) * 4);
+  }
+}
+
+/* Loading Screen css Inspo von https://codepen.io/MC086/pen/wvqmJLV

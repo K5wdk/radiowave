@@ -1,0 +1,90 @@
+#player {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #111;
+  border-top: 2px solid #4ade80;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+  z-index: 100;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#player img {
+  width: 56px;
+  height: 56px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 0 12px #4ade80;
+}
+#player .info {
+  flex-grow: 1;
+  overflow: hidden;
+}
+#player .info .title {
+  font-weight: 700;
+  font-size: 1.2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#play-pause-btn {
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+  background: #4ade80;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px #4ade80;
+  transition: background 0.3s ease;
+}
+#play-pause-btn:hover {
+  background: #22c55e;
+}
+#play-pause-icon {
+  width: 24px;
+  height: 24px;
+  fill: #111;
+}
+
+.radio-card {
+  min-width: 250px;
+  background: #222;
+  border-radius: 24px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.8);
+  overflow: hidden;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: filter 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid transparent;
+}
+.radio-card:hover {
+  filter: brightness(1.1);
+}
+.radio-card.active {
+  border-color: #4ade80;
+  box-shadow: 0 0 20px #4ade80;
+}
+.radio-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+.radio-card .content {
+  padding: 1rem;
+}
+.radio-card .content h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+.radio-card .content p {
+  color: #999;
+  font-size: 0.875rem;
+}

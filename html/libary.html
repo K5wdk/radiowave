@@ -1,0 +1,72 @@
+<!--         ____  _  _    __ 
+            / ___)( \/ ) _(  )
+            \___ \ )  ( / \) \
+            (____/(_/\_)\____/
+          Made by Jonah and Samuel
+      https://github.com/k5wdk/RadioWave
+
+             CSS / HTML / JS
+          https://tailwindcss.com/
+-->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>RadioWave</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="../js/main.js" defer"></script>
+  <link rel="stylesheet" href="../css/radio.css">
+  <link rel="stylesheet" href="../css/loading.css">
+<style>
+  /* Used: https://www.toptal.com/developers/cssminifier */
+  .scroll-container{scrollbar-width:thin;scrollbar-color:#0000 transparent}.scroll-container::-webkit-scrollbar{height:8px}.scroll-container::-webkit-scrollbar-track{background:0 0}.scroll-container::-webkit-scrollbar-thumb{background-color:#4ade80;border-radius:10px}.status-dot{display:inline-block;width:5px;height:5px;border-radius:50%;margin-left:5px}.status-dot.online{background-color:#0f0;box-shadow:0 0 5px #0f0,0 0 10px #0f0;animation:1.5s infinite alternate glow-green}.status-dot.offline{background-color:red;box-shadow:0 0 5px red,0 0 10px red;animation:1.5s infinite alternate glow-red}@keyframes glow-green{from{box-shadow:0 0 5px #0f0,0 0 10px #0f0}to{box-shadow:0 0 10px #0f0,0 0 20px #0f0}}@keyframes glow-red{from{box-shadow:0 0 5px red,0 0 10px red}to{box-shadow:0 0 10px red,0 0 20px red}}
+</style>
+</head>
+<body class="bg-black text-white min-h-screen font-sans select-none">
+
+<div id="loading-screen" class="fixed inset-0 bg-black flex items-center justify-center z-50">
+  <div class="flex space-x-1">
+    <span class="loader-dot"></span>
+    <span class="loader-dot"></span>
+    <span class="loader-dot"></span>
+    <span class="loader-dot"></span>
+    <span class="loader-dot"></span>
+  </div>
+</div>
+<div id="main-content" class="opacity-0 flex flex-col min-h-screen pb-[72px]">
+  <div class="flex flex-grow">
+    <aside class="w-[80px] bg-[#111] flex flex-col items-center py-6 gap-8">
+      <a href="/index.html">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/home.png" class="w-6 h-6 cursor-pointer" />
+      </a>
+      <img src="https://img.icons8.com/ios-filled/50/ffffff/radio.png" class="w-6 h-6" />
+      <img src="https://img.icons8.com/ios-filled/50/ffffff/search--v1.png" class="w-6 h-6" />
+      <img src="https://img.icons8.com/ios-filled/50/ffffff/settings.png" class="w-6 h-6" />
+    </aside>
+    <main class="flex-1 overflow-y-auto bg-gradient-to-b from-black via-[#111] to-black px-6 py-6">
+      <div class="flex justify-between items-center mb-10">
+        <h1 class="text-3xl font-bold">RadioWave Library</h1>
+        <img src="https://i.pravatar.cc/100" alt="User" class="w-14 h-14 rounded-full shadow-lg border-2 border-white" />
+      </div>
+      <div id="radio-sections"></div>
+    </main>
+  </div>
+  <footer class="text-center text-sm text-gray-500 py-4 bg-[#111] w-full">
+    Entwickelt von Jonah und Samuel
+  </footer>
+</div>
+<div id="player" aria-live="polite" aria-atomic="true" aria-label="Aktueller Radiosender">
+  <img id="player-image" src="" alt="Senderbild" />
+  <div class="info">
+    <div id="player-title" class="title">Kein Radio aktiv</div>
+  </div>
+  <div id="play-pause-btn" aria-label="Play/Pause Button" role="button" tabindex="0">
+    <svg id="play-pause-icon" viewBox="0 0 24 24">
+      <path d="M8 5v14l11-7z" />
+    </svg>
+  </div>
+  <audio id="player-audio" preload="none" src="" hidden></audio>
+</div>
+</body>
+</html>
