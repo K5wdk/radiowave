@@ -1,4 +1,4 @@
-# Radio-Streaming Webseite  
+# RadioWAVE Informatik Projekt  
 **Informatik-Projekt von Samuel & Jonah (2025)**  
 
 → [Live-Webseite ansehen](https://radiowave-v1.netlify.app/)  
